@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/da5bf76616.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+
+
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i> 
+        </nav>
+        
+        <div class="header-text">
+            <p>A Student From SRM University KTR</p>
+            <h1>Hi, I'm <span>Ayushi</span><br>Dhelia </h1>
+        </div>
+    </div>
+</div>
+<!-- ---------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="background.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>As an enthusiastic and dedicated individual , I believe with strong will power, self confidence and right motto anything that can be dreamt is achievable. My inquisitive nature drives me to constantly explore new horizons. I thrive as a team player with good communication , leadership qualities and adept management skills. </p>
+                    
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C, C++, Python, Java</li>
+                        <li><span>Web Development</span><br>Front End</li>
+                        <li><span>Hacker rank</span><br>CPP AND JAVA- Gold Badge<br>C - Silver Badge<br>PROBLEM SOLVING- Bronze<br>JAVA- Verified skills and roles by hacker rank.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Internship 2023</span><br>BHARAT INTERN<br>AICTE AI-ML VIRTUAL INTERNSHIP SUPPORTED BY AWS</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>School</span><br>MAHADEVI BIRLA SHISHU VIHAR, KOLKATA<br>10th percentage: 95%<br>12th percentage: 88%</li>
+                        <li><span>College</span><br>SRM Institute of Science and Technology- KTR, Chennai<br>Sem 1 CGPA: 9.09<br>Sem 2 CGPA: 9.05</li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------services--------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>As a web designer, I craft visually stunning and user-friendly websites tailored to elevate your brand. With a keen eye for design and expertise in the latest trends, I create compelling online experiences that captivate your audience and drive results. Let's transform your digital presence together.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <!-- <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>cbrecbrecbghrvc sd  gwvcewgxoyuexb gwewgaxtyftgvrcgrvc abxjhgdcjsdvc s ndxiugrcybchj 
+                    cbjhscbhdfbvhjbdfkvbhj</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store-ios"></i>
+                <h2>App Design</h2>
+                <p>cbrecbrecbghrvc sd  gwvcewgxoyuexb gwewgaxtyftgvrcgrvc abxjhgdcjsdvc s ndxiugrcybchj 
+                    cbjhscbhdfbvhjbdfkvbhj</p>
+                <a href="#">Learn more</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- --------portfolio-------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="task.png">
+                <div class="layer">
+                    <h3>TASK MANAGER WEBSITE</h3>
+                    <p>The  task manager website simplifies life. Easy to use, organize, and track tasks. Boost productivity effortlessly.</p>
+                    <a href="#"><i class="far fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="weather.jpg">
+                <div class="layer">
+                    <h3>WEATHER FORECASTING WEBSITE</h3>
+                    <p>Experience accurate weather updates on my forecasting website. Using a reliable API, it deliver real-time information for your location.</p>
+                    <a href="#"><i class="far fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="jobportal.jpg">
+                <div class="layer">
+                    <h3>JOB PORTAL</h3>
+                    <p>The job portal connects employers with top talent effortlessly. User-friendly interface, seamless navigation, and robust features make hiring a breeze. </p>
+                    <a href="#"><i class="far fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ------------ contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> ad8581@srmist.edu.in</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> 0123456789</p>
+
+                <div class="socia-icons">
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a> -->
+                        <a href="https://github.com/Ayushidhelia "><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/_ayushidhelia?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/ayushi-dhelia-442124250"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    
+                    <a href="https://drive.google.com/file/d/1qfLeMha6aBYMsyD5Bcy97M_8HBOzG9q0/view?usp=drivesdk" download class="btn btn2">Download CV</a>
+
+
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 Ayushi Dhelia. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (var tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        event.currentTarget.classList.add("active-link");
+        for (var content of tabcontents) {
+            content.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxRINM0YbqLVSONvYASFpF81z9OH6Nxfk_N3rLT_3ebvKqttKz1MmGqK6Pwq9j39Wat/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
